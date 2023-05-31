@@ -1,0 +1,67 @@
+@import '../variable.less';
+
+.login-dialog {
+  background-color: @dialog-background-color;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  box-shadow: rgb(81, 159, 247) 0px 3px 8px;
+  width: 30%;
+  min-width: 280px;
+  aspect-ratio: 1;
+  position: absolute;
+  right: 5%;
+  top: 15%;
+  padding: 2em;
+
+  h2 {
+    text-align: center;
+  }
+
+  .input-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+
+    .input {
+      display: flex;
+      flex-direction: column;
+      // gap: 0.5em;
+      width: 100%;
+
+      p {}
+
+      input {
+        width: 100%;
+        padding: .5em;
+      }
+    }
+  }
+
+  .login-forgot {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    button {}
+
+    a {
+      text-align: center;
+    }
+  }
+}
+
+
+// destop view 
+
+@media screen and (max-width: 575px) {
+  .login-dialog {
+    width: 90%;
+    top: 50%;
+    left: 5%;
+    right: 5%;
+    position: absolute;
+  }
+
+}

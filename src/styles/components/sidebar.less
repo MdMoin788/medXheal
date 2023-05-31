@@ -1,0 +1,87 @@
+@import '../variable.less';
+
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  gap: 1em;
+  width: 20%;
+
+  .item {
+    border-bottom: 1px solid black;
+    padding: 0.2em;
+    cursor: pointer;
+    color: blue;
+
+    p {}
+  }
+}
+
+
+
+.sideBar-container {
+  display: flex;
+  height: 80%;
+  min-height: 400px;
+  position: fixed;
+  top: 11%;
+  z-index: 2;
+  width: 19%;
+  margin-bottom: 200px;
+
+  .company-logo {
+    width: 30px;
+    height: 100%;
+    border-radius: 50px;
+  }
+
+}
+
+.toggle-btn {
+  display: flex;
+  padding: 10px;
+
+  .toggle-btns-raf {
+    position: fixed;
+    top: 2.2%;
+    border: none;
+
+    .toggle-btns-button {
+      border: none;
+      background: none;
+      color: white;
+    }
+  }
+}
+
+// mobile view 
+
+@media screen and (min-width: 575px) {
+  .toggle-btn {
+    display: none;
+  }
+}
+// destop view 
+
+@media screen and (max-width: 575px) {
+  .css-dip3t8 {
+    top: 7.5% !important;
+  }
+
+}
+
+
+.loaders {
+  // width: 100px;
+  padding-right: 5px;
+  border: none;
+  background: none;
+
+
+}
+
+
+.css-dip3t8{
+  background-color: rgb(249, 249, 249) !important;
+}

@@ -1,0 +1,140 @@
+.dashboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+
+  .sidebar {}
+
+  .content-area {
+    width: 80%;
+    padding: 1em;
+    margin-top: 3em;
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    // z-index: -1;
+
+  }
+}
+
+
+@media screen and (max-width: 575px) {
+  .dashboard {
+    padding-right: 1em;
+
+    .content-area {
+      width: 98% !important;
+      margin-left: -20px !important;
+
+    }
+  }
+}
+
+.bgColor {
+  background: rgb(30, 30, 45) !important;
+}
+
+
+
+
+//
+.card-subtitle-custom {
+  color: white;
+}
+
+.card-title-custom {
+  color: white;
+}
+
+.dailyDashboardCard .card {
+  margin: 8px;
+}
+
+.dailyDashboardCard .card h1 {
+  font-size: 32px;
+}
+
+.icon-custom {
+  margin-right: 23px;
+}
+
+.icon-custom i {
+  font-size: 47px;
+  color: white;
+}
+
+.custom-card1 {
+  width: 20rem;
+  border-radius: 30px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 121, 117, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.custom-card2 {
+  width: 20rem;
+  border-radius: 30px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 84, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.custom-card3 {
+  width: 20rem;
+  border-radius: 30px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 106, 9, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.custom-card4 {
+  width: 20rem;
+  border-radius: 30px;
+  background: rgb(121, 9, 9);
+  background: linear-gradient(90deg, rgba(121, 9, 9, 1) 0%, rgba(0, 0, 0, 1) 87%);
+}
+
+.custom-card5 {
+  width: 20rem;
+  border-radius: 30px;
+  background: rgb(1, 106, 0);
+  background: linear-gradient(90deg, rgba(1, 106, 0, 1) 0%, rgba(0, 0, 0, 1) 87%);
+}
+
+
+.dailyDashboardCard {
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+
+  width: fit-content;
+
+}
+
+@media only screen and (max-width : 576px) {
+  .dailyDashboardCard {
+    justify-content: center;
+  }
+
+  .custom-card1 {
+    width: 100%;
+  }
+
+  .custom-card2 {
+    width: 100%;
+  }
+
+  .custom-card3 {
+    width: 100%;
+  }
+
+  .custom-card4 {
+    width: 100%;
+  }
+
+  .custom-card5 {
+    width: 100%;
+  }
+
+
+}
